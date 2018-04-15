@@ -1,0 +1,12 @@
+PODS:
+  - AsyncImageDownloader (1.0.0)
+
+DEPENDENCIES:
+  - AsyncImageDownloader (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  AsyncImageDownloader: 25801655cccb75e828ca30464da694ce57e6b2e0
+
+PODFILE CHECKSUM: 301d454179037b8a05271de3e06fc4b80329b761
+
+COCOAPODS: 1.2.0

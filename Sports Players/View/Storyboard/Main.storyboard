@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9P8-aw-71W">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Arial.ttf">
+            <string>ArialMT</string>
+        </array>
+        <array key="ArialBold.ttf">
+            <string>Arial-BoldMT</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="NBK-vz-6si">
+            <objects>
+                <tableViewController id="2Aq-cc-n8S" customClass="SportsPlayersTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="mDJ-hd-Vm4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="playerCell" rowHeight="121" id="iBj-ai-Pce" customClass="PlayerTableViewCell">
+                                <rect key="frame" x="0.0" y="28" width="375" height="121"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iBj-ai-Pce" id="glW-Tj-alG">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="120.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="award" translatesAutoresizingMaskIntoConstraints="NO" id="Dqa-ae-BNN">
+                                            <rect key="frame" x="20" y="20" width="80.5" height="80.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Dqa-ae-BNN" secondAttribute="height" multiplier="1:1" id="OOe-DW-mKh"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Surname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rq-QK-Jlk">
+                                            <rect key="frame" x="120.5" y="33" width="226.5" height="21"/>
+                                            <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
+                                            <color key="textColor" red="0.3411764705882353" green="0.35686274509803922" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftQ-9w-ioX">
+                                            <rect key="frame" x="120" y="64" width="227" height="18"/>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="2rq-QK-Jlk" firstAttribute="leading" secondItem="Dqa-ae-BNN" secondAttribute="trailing" constant="20" id="7Xo-oE-vD9"/>
+                                        <constraint firstItem="ftQ-9w-ioX" firstAttribute="leading" secondItem="2rq-QK-Jlk" secondAttribute="leading" id="CPG-WM-pCk"/>
+                                        <constraint firstAttribute="bottom" secondItem="Dqa-ae-BNN" secondAttribute="bottom" constant="20" id="NhO-Qk-7e4"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="2rq-QK-Jlk" secondAttribute="trailing" constant="20" id="O6l-ri-h8a"/>
+                                        <constraint firstItem="Dqa-ae-BNN" firstAttribute="centerY" secondItem="glW-Tj-alG" secondAttribute="centerY" id="XFY-VH-5aP"/>
+                                        <constraint firstItem="2rq-QK-Jlk" firstAttribute="top" secondItem="glW-Tj-alG" secondAttribute="topMargin" constant="25" id="d5D-1z-aSH"/>
+                                        <constraint firstItem="Dqa-ae-BNN" firstAttribute="top" secondItem="glW-Tj-alG" secondAttribute="top" constant="20" id="jKA-nH-vqx"/>
+                                        <constraint firstItem="ftQ-9w-ioX" firstAttribute="trailing" secondItem="2rq-QK-Jlk" secondAttribute="trailing" id="ojN-7h-dGz"/>
+                                        <constraint firstItem="ftQ-9w-ioX" firstAttribute="top" secondItem="2rq-QK-Jlk" secondAttribute="bottom" constant="10" id="r9c-gN-MXi"/>
+                                        <constraint firstItem="Dqa-ae-BNN" firstAttribute="leading" secondItem="glW-Tj-alG" secondAttribute="leading" constant="20" id="zFk-BF-3Ho"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="playerBirthday" destination="ftQ-9w-ioX" id="6qp-ur-pQe"/>
+                                    <outlet property="playerImage" destination="Dqa-ae-BNN" id="fXc-rP-sSQ"/>
+                                    <outlet property="playerName" destination="2rq-QK-Jlk" id="LSA-8u-ssg"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2Aq-cc-n8S" id="M6X-bZ-s9C"/>
+                            <outlet property="delegate" destination="2Aq-cc-n8S" id="gsn-TK-1oG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Home" id="nWt-ls-4Vv"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ndu-lf-3SO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1372" y="211.84407796101951"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0Ok-Gj-hFv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9P8-aw-71W" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ml0-G8-Fxc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.96862745100000003" green="0.79215686269999996" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.3411764706" green="0.35686274509999999" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.96862745098039216" green="0.792156862745098" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2Aq-cc-n8S" kind="relationship" relationship="rootViewController" id="cXH-ud-S3J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iqi-Y9-HNh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="432.80000000000001" y="211.84407796101951"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="award" width="256" height="256"/>
+    </resources>
+</document>
